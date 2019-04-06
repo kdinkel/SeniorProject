@@ -1,6 +1,7 @@
 # Introduction
-*React-SPA-BoilerPlate*:
-A light-weight skeleton to start your React Web App project with most of the popular tools and libraries included.
+*UAS Logbook SPA*:
+Built on top of React SPA boilerplate by Orange-beans. Library and local server provided by Facebook.
+
 
 # Tools / Libraries included (all tools and libraries are properly setup to be easily implemented)
 #### Backend:
@@ -34,7 +35,7 @@ A light-weight skeleton to start your React Web App project with most of the pop
 # To Install
 #### Clone into a local folder:
 ```bash
-$ git clone https://github.com/orange-beans/React-SPA-boilerplate.git
+$ git clone https://github.com/kdinkel/SeniorProject.git
 ```
 #### Then install dependent modules:
 ```bash
@@ -42,12 +43,8 @@ $ npm install
 ```
 
 # To Use
-#### Run the server and front-end development
-```bash
-$ npm run start
-```
 
-#### Run the server only
+#### FIRST: Run the server only
 ```bash
 $ npm run server
 ```
