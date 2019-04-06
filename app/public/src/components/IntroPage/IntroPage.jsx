@@ -14,7 +14,7 @@ export const IntroPage = () => {
       <Slideshow />
       <div className="container">
         <h1>
-          Put your introduction here.
+          UAS Digital Logbook
         </h1>
       </div>
     </LayoutRow>

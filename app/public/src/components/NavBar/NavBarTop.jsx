@@ -17,7 +17,6 @@ const NavBarTop = () => {
             </button>
             <a href="/" styleName="brand1" className="nav-brand pull-left">
               <span>
-                Your logo here
                 <div style={{width: 64, height: 64}}>
                   <img src="./src/static/favicon.ico"/>
                 </div>
