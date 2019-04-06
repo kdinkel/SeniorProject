@@ -111,7 +111,8 @@ a {
 
 .row h1 {
   font-family: VAGRoundedStd-Black, 'VAGRoundedStd-Black', Helvetica, sans-serif;
-  color: #0b97c4;
+  color: purple;
+  text-shadow: 2px 2px black;
   text-align: center;
 }
 

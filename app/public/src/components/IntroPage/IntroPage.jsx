@@ -11,12 +11,13 @@ import styles from './styles.css';
 export const IntroPage = () => {
   return (
     <LayoutRow>
-      <Slideshow />
       <div className="container">
-        <h1>
+        <h1 styleName="title">
           UAS Digital Logbook
+
         </h1>
       </div>
+      <Slideshow />
     </LayoutRow>
   );
 };

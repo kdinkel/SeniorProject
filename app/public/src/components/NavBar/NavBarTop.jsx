@@ -17,22 +17,18 @@ const NavBarTop = () => {
             </button>
             <a href="/" styleName="brand1" className="nav-brand pull-left">
               <span>
-                <div style={{width: 64, height: 64}}>
-                  <img src="./src/static/favicon.ico"/>
+                <div styleName="logo">
+                  <img styleName="logo" src="./src/static/UASRP_Logo.png"/>
                 </div>
               </span>
             </a>
           </div>
           <div className="collapse navbar-collapse">
             <ul className="nav navbar-nav">
-              <li><Link to="/intro">Intro</Link></li>
-              <li><Link to="/page1">Page1</Link></li>
-              <li><Link to="/page2">Page2</Link></li>
-              <li><Link to="/page3">Page3</Link></li>
-            </ul>
-            <ul className="nav navbar-nav navbar-right">
-              <li><Link to="/signin">Sign In</Link></li>
-              <li><Link to="/register">Register</Link></li>
+              <li><Link to="/details">Details</Link></li>
+              <li><Link to="/maintenance">Maintenance</Link></li>
+              <li><Link to="/discrepancies">Discrepancies</Link></li>
+              <li><Link to="/flight">Flight</Link></li>
             </ul>
           </div>
         </div>

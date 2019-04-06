@@ -11,30 +11,41 @@ import { Footer }    from './components/Footer';
 // Top Navbar route Components
 import IntroPage from './components/IntroPage';
 import ContentPage from './components/ContentPage';
-import SignIn from './components/SignIn';
+//import Details from './components/Details';
 import Register from './components/Register';
 
-const Page1 = (props) => {
+const Details = (props) => {
   return (
     <ContentPage>
-      <h1>Put your Contents for Page1 here</h1>
-      {props.children}
+      <h1>Airframe Details</h1>
+      <h1>{window.location.search}</h1>
     </ContentPage>
   );
 };
 
-const Page2 = (props) => {
+const MntcLogs = (props) => {
   return (
     <ContentPage>
-      <h1>Put your Contents for Page2 here</h1>
+      <h1>Maintenance Logs</h1>
+      <h1>{window.location.search}</h1>
     </ContentPage>
   );
 };
 
-const Page3 = (props) => {
+const DiscLogs = (props) => {
   return (
     <ContentPage>
-      <h1>Put your Contents for Page3 here</h1>
+      <h1>Discrepancy Logs</h1>
+      <h1>{window.location.search}</h1>
+    </ContentPage>
+  );
+};
+
+const FlightLogs = (props) => {
+  return (
+    <ContentPage>
+      <h1>Flight Logs</h1>
+      <h1>{window.location.search}</h1>
     </ContentPage>
   );
 };
@@ -43,7 +54,6 @@ const App = (props) => {
   return (
   <div>
 		<NavBarTop />
-    <img style={{ width: 1, height: 1 }} src="./src/static/2BeansLogo180x180.svg"/>
     { props.children }
     <Footer />
 	</div>
@@ -62,13 +72,11 @@ export default class Root extends React.Component {
         <Router history={browserHistory}>
           <Route path="/" component={App}>
             <IndexRoute component={IntroPage} />
-            <Route path="intro" component={IntroPage} />
-            <Route path="page1" component={Page1}>
+            <Route path="details" component={Details} />
+            <Route path="maintenance" component={MntcLogs}>
             </Route>
-            <Route path="page2" component={Page2} />
-            <Route path="page3" component={Page3} />
-            <Route path="signin" component={SignIn} />
-            <Route path="register" component={Register} />
+            <Route path="discrepancies" component={DiscLogs} />
+            <Route path="flight" component={FlightLogs} />
           </Route>
         </Router>
       </Provider>

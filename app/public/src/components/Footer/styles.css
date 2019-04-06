@@ -1,5 +1,8 @@
 .container-fluid-mystyle{
 	margin-top: 5%;
+	margin: auto;
+	min-width: 100px;
+	max-width: 500px;
 }
 
 .Footer1 {

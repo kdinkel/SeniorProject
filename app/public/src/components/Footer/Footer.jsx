@@ -6,33 +6,12 @@ import styles from './styles.css';
 const Footer = () => {
   return (
     <footer className="container" styleName="container-fluid-mystyle">
-      <Layout layout={{col:4}}>
+      <Layout>
         <div className="">
           <ul className="list-group">
-            <li className="list-group-item" styleName="Footer1">Footers</li>
-            <li className="list-group-item" styleName="Footer1"><a href='#'>info</a></li>
-            <li className="list-group-item" styleName="Footer1"><a href='#'>info</a></li>
-            <li className="list-group-item" styleName="Footer1"><a href='#'>info</a></li>
-          </ul>
-        </div>
-      </Layout>
-      <Layout layout={{col:4}}>
-        <div className="">
-          <ul className="list-group">
-            <li className="list-group-item" styleName="Footer1">Footers</li>
-            <li className="list-group-item" styleName="Footer1"><a href='#'>info</a></li>
-            <li className="list-group-item" styleName="Footer1"><a href='#'>info</a></li>
-            <li className="list-group-item" styleName="Footer1"><a href='#'>info</a></li>
-          </ul>
-        </div>
-      </Layout>
-      <Layout layout={{col:4}}>
-        <div className="">
-          <ul className="list-group">
-            <li className="list-group-item" styleName="Footer1">Footers</li>
-            <li className="list-group-item" styleName="Footer1"><a href='#'>info</a></li>
-            <li className="list-group-item" styleName="Footer1"><a href='#'>info</a></li>
-            <li className="list-group-item" styleName="Footer1"><a href='#'>info</a></li>
+            <li className="list-group-item" styleName="Footer1">Report</li>
+            <li className="list-group-item" styleName="Footer1"><a href="https://www.faa.gov/about/office_org/field_offices/fsdo/">Incident</a></li>
+            <li className="list-group-item" styleName="Footer1"><a href='/page2'>Lost UAV</a></li>
           </ul>
         </div>
       </Layout>
