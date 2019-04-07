@@ -16,9 +16,9 @@ export const IntroPage = () => {
           UAS Digital Logbook
         </h1>
         <p>
-        Your source for easy UAS logs.
-        1. Scan QR from your mobile device.
-        2. Select from the log options in the Nav Bar.
+        Your source for easy UAS logs.<br>
+        1. Scan QR from your mobile device.<br>
+        2. Select from the log options in the Nav Bar.<br>
         Happy Logging!
         </p>
       </div>
