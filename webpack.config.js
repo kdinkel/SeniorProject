@@ -8,6 +8,10 @@ module.exports = {
     filename: 'bundle.js'
   },
 
+  devserver: {
+    contentBase: "./app/public/build",
+  },
+
   cache: false,
   debug: true,
   devtool: 'source-map',
@@ -41,6 +45,7 @@ module.exports = {
     ]
   },
   plugins: [
+    
     // Don't compress yet for faster building time
     //new webpack.optimize.UglifyJsPlugin({
     //  compress: {

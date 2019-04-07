@@ -1,8 +1,8 @@
 {
-  "name": "React_SPA_boilerPlate",
+  "name": "UAS_Digital_Logbook",
   "version": "0.1.1",
-  "description": "A basic boilerPlate to build an React SPA Website",
-  "repository": "",
+  "description": "Logbook built on orange-Beans SPA boilerplate",
+  "repository": "https://github.com/kdinkel/SeniorProject.git",
   "main": "index.js",
   "dependencies": {
     "body-parser": "^1.15.2",
@@ -44,6 +44,7 @@
     "eslint-plugin-react": "^6.0.0",
     "extract-text-webpack-plugin": "^1.0.1",
     "file-loader": "^0.9.0",
+    "html-webpack-plugin": "^3.2.0",
     "less": "^2.7.1",
     "less-loader": "^2.2.3",
     "mocha": "^3.0.0",
@@ -52,7 +53,8 @@
     "redux-devtools-log-monitor": "^1.0.11",
     "style-loader": "^0.13.1",
     "stylelint": "^7.1.0",
-    "webpack": "^1.13.1",
+    "webpack": "^1.15.0",
+    "webpack-cli": "^3.3.0",
     "webpack-sources": "^0.1.2"
   },
   "scripts": {
@@ -60,8 +62,9 @@
     "start": "npm run front-dev | npm run server-dev",
     "server": "cd app/server && node server.js",
     "server-dev": "cd app/server && nodemon server.js",
-    "front-dev": "webpack --progress --color --watch --display-error-details"
+    "front-dev": "webpack --progress --color --watch --display-error-details",
+    "build": "webpack --mode production"
   },
-  "author": "orange-Beans",
+  "author": "orange-Beans; Kalem Dinkel",
   "license": "MIT"
 }
