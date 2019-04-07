@@ -31,7 +31,7 @@ const Slideshow = () => {
 				<div className="text-center">
 					<img  styleName="img-test" src={"./src/static/Slide1.jpg"}>
 					</img>
-					<button styleName="slide-button" className="btn btn-default"><a href={'/details?num=' + numba}>Airframe Details</a></button>
+					<button styleName="slide-button" className="btn btn-default"><Link to={"/details?num=" + numba}>Airframe Details</Link></button>
 				</div>
 				<div className="text-center">
 					<img  styleName="img-test" src={"./src/static/Slide4.jpg"}>
