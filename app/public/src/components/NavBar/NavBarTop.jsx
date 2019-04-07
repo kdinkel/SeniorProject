@@ -2,6 +2,15 @@ import React from 'react';
 import { Link } from 'react-router';
 import CSSModules from 'react-css-modules';
 import styles from './styles.css';
+import queryString from 'query-string';
+
+const parse = num => {
+  const values = queryString.parse(num);
+  return values.num;
+}
+
+var numba = parse(window.location.search);
+if (numba == undefined) numba = "";
 
 const NavBarTop = () => {
   return (
@@ -25,10 +34,13 @@ const NavBarTop = () => {
           </div>
           <div className="collapse navbar-collapse">
             <ul className="nav navbar-nav">
-              <li><Link to="/details">Details</Link></li>
-              <li><Link to="/maintenance">Maintenance</Link></li>
-              <li><Link to="/discrepancies">Discrepancies</Link></li>
-              <li><Link to="/flight">Flight</Link></li>
+              <li><Link to={"/details?num=" + numba}>Details</Link></li>
+              <li><Link to={"/maintenance?num=" + numba}>Maintenance</Link></li>
+              <li><Link to={"/discrepancies?num=" + numba}>Discrepancies</Link></li>
+              <li><Link to={"/flight?num=" + numba}>Flight</Link></li>
+              <li>
+                <input type="text" id="Nnumber" styleName="text-line" value={numba}/>
+              </li>
             </ul>
           </div>
         </div>

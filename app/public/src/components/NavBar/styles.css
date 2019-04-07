@@ -20,3 +20,11 @@
 .logs{
 	background-color: red;
 }
+.text-line {
+	background-color: white;
+	outline: normal;
+	margin-top: 20%;
+}
+.go {
+	width: 40px;
+}

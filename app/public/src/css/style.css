@@ -28,7 +28,7 @@ body {
   font-size : 14px;
   font-family: Arial,'Helvetica Neue',Helvetica,sans-serif;
   font-weight: 600;
-  background-color: grey;
+  background-color: #9068be;
 }
 
 html {
@@ -111,8 +111,8 @@ a {
 
 .row h1 {
   font-family: VAGRoundedStd-Black, 'VAGRoundedStd-Black', Helvetica, sans-serif;
-  color: purple;
-  text-shadow: 2px 2px black;
+  color: white;
+  text-shadow: 2px 2px purple;
   text-align: center;
 }
 

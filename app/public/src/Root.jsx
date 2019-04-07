@@ -1,5 +1,6 @@
 import React, { Component } from 'react';
 import { Provider } from 'react-redux';
+import queryString from 'query-string';
 
 // Overall Page Layout Components
 import { Router, Route, IndexRoute, browserHistory } from 'react-router';
@@ -14,11 +15,16 @@ import ContentPage from './components/ContentPage';
 //import Details from './components/Details';
 import Register from './components/Register';
 
+const parse = num => {
+  const values = queryString.parse(num);
+  return values.num;
+}
+
 const Details = (props) => {
   return (
     <ContentPage>
       <h1>Airframe Details</h1>
-      <h1>{window.location.search}</h1>
+      <h1>{parse(window.location.search)}</h1>
     </ContentPage>
   );
 };
@@ -27,7 +33,7 @@ const MntcLogs = (props) => {
   return (
     <ContentPage>
       <h1>Maintenance Logs</h1>
-      <h1>{window.location.search}</h1>
+      <h1>{parse(window.location.search)}</h1>
     </ContentPage>
   );
 };
@@ -36,7 +42,7 @@ const DiscLogs = (props) => {
   return (
     <ContentPage>
       <h1>Discrepancy Logs</h1>
-      <h1>{window.location.search}</h1>
+      <h1>{parse(window.location.search)}</h1>
     </ContentPage>
   );
 };
@@ -45,7 +51,7 @@ const FlightLogs = (props) => {
   return (
     <ContentPage>
       <h1>Flight Logs</h1>
-      <h1>{window.location.search}</h1>
+      <h1>{parse(window.location.search)}</h1>
     </ContentPage>
   );
 };
