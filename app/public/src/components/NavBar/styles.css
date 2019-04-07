@@ -11,6 +11,11 @@
   line-height: normal;
 }
 
+.brand2{
+  padding-right: 20px;
+  line-height: normal;
+}
+
 .logo {
 	height: 64px;
 	width: auto;
@@ -27,4 +32,16 @@
 }
 .go {
 	width: 40px;
+}
+
+.listDiv {
+	position: absolute;
+	bottom: 0;
+	width: 100%;
+}
+
+.list {
+	position: relative;
+	margin-left: auto;
+	margin-right: auto;
 }

@@ -31,16 +31,16 @@ const NavBarTop = () => {
                 </div>
               </span>
             </a>
+            <a href="/" styleName="brand2" className="nav-brand pull-right">
+              <input type="text" id="Nnumber" styleName="text-line" value={numba}/>
+            </a>
           </div>
-          <div className="collapse navbar-collapse">
-            <ul className="nav navbar-nav">
+          <div styleName="listDiv" className="collapse navbar-collapse">
+            <ul styleName="list" className="nav navbar-nav">
               <li><Link to={"/details?num=" + numba}>Details</Link></li>
               <li><Link to={"/maintenance?num=" + numba}>Maintenance</Link></li>
               <li><Link to={"/discrepancies?num=" + numba}>Discrepancies</Link></li>
               <li><Link to={"/flight?num=" + numba}>Flight</Link></li>
-              <li>
-                <input type="text" id="Nnumber" styleName="text-line" value={numba}/>
-              </li>
             </ul>
           </div>
         </div>
