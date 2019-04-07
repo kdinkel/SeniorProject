@@ -14,8 +14,13 @@ export const IntroPage = () => {
       <div className="container">
         <h1 styleName="title">
           UAS Digital Logbook
-
         </h1>
+        <p>
+        Your source for easy UAS logs.
+        1. Scan QR from your mobile device.
+        2. Select from the log options in the Nav Bar.
+        Happy Logging!
+        </p>
       </div>
       <Slideshow />
     </LayoutRow>
