@@ -4,12 +4,22 @@ import Slider from 'react-slick';
 
 import styles from './styles.css';
 
+import queryString from 'query-string';
+
+const parse = num => {
+  const values = queryString.parse(num);
+  return values.num;
+}
+
+var numba = parse(window.location.search);
+if (numba == undefined) numba = "";
+
 const Slideshow = () => {
   const settings = {
     dots: true,
     infinite: true,
     speed: 5000,
-    slidesToShow: 1,
+    slidesToShow: 2,
     slidesToScroll: 1,
     centerMode: true,
     arrows: true,
@@ -19,24 +29,24 @@ const Slideshow = () => {
   return (
 			<Slider {...settings}>
 				<div className="text-center">
-					<img  styleName="img-test" src={"./src/static/UFUAS_Banner.jpg"}>
+					<img  styleName="img-test" src={"./src/static/Slide1.jpg"}>
 					</img>
-					<button styleName="slide-button" className="btn btn-default">#TravMan</button>
+					<button styleName="slide-button" className="btn btn-default"><a href={'/details?num=' + numba}>Airframe Details</a></button>
 				</div>
 				<div className="text-center">
-					<img  styleName="img-test" src={"./src/static/slide.png"}>
+					<img  styleName="img-test" src={"./src/static/Slide4.jpg"}>
 					</img>
-					<button styleName="slide-button" className="btn btn-default">Button2</button>
+					<button styleName="slide-button" className="btn btn-default"><a href={'/maintenance?num=' + numba}>Maintenance Logs</a></button>
 				</div>
 				<div className="text-center">
-					<img  styleName="img-test" src={"./src/static/UFUAS_Banner.jpg"}>
+					<img  styleName="img-test" src={"./src/static/Slide3.jpg"}>
 					</img>
-					<button styleName="slide-button" className="btn btn-default">#TravMan</button>
+					<button styleName="slide-button" className="btn btn-default"><a href={'/discrepancies?num=' + numba}>Discrepancy Logs</a></button>
 				</div>
 				<div className="text-center">
-					<img  styleName="img-test" src={"./src/static/slide.png"}>
+					<img  styleName="img-test" src={"./src/static/Slide2.jpg"}>
 					</img>
-					<button styleName="slide-button" className="btn btn-default">Button4</button>
+					<button styleName="slide-button" className="btn btn-default"><a href={'/flight?num=' + numba}>Flight Logs</a></button>
 				</div>
 			</Slider>
   )
