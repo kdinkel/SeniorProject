@@ -1,3 +1,3 @@
-import NavBarTop from './NavbarTop.jsx';
+import NavBarTop from './NavBarTop.jsx';
 
 export { NavBarTop };
