@@ -14,6 +14,7 @@ import IntroPage from './components/IntroPage';
 import ContentPage from './components/ContentPage';
 //import Details from './components/Details';
 //import Register from './components/Register';
+import styles from './styles.css';
 
 const parse = num => {
   const values = queryString.parse(num);
@@ -60,6 +61,7 @@ const App = (props) => {
   return (
   <div>
 		<NavBarTop />
+    <h1></h1>
     { props.children }
     <Footer />
 	</div>

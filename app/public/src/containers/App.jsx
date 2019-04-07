@@ -9,11 +9,14 @@ import { Footer }    from '../components/Footer';
 // Top Navbar route Components
 import IntroPage from '../components/IntroPage';
 
+
 const App = (props) => {
   return (
   <div>
 		<NavBarTop />
-    { props.children }
+    <div styleName="space">
+      { props.children }
+    </div>
     <Footer />
 	</div>
   );
