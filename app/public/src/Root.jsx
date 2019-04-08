@@ -61,7 +61,6 @@ const App = (props) => {
   return (
   <div>
 		<NavBarTop />
-    <h1></h1>
     { props.children }
     <Footer />
 	</div>

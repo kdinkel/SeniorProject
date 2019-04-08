@@ -18,12 +18,6 @@ const NavBarTop = () => {
       <div className="container">
         <div className="container-fluid">
           <div className="nav-header" styleName="navstyle">
-            <button className="navbar-toggle collapsed">
-              <span className="sr-only"/>
-              <span className="icon-bar"/>
-              <span className="icon-bar"/>
-              <span className="icon-bar"/>
-            </button>
             <a href="/" styleName="brand1" className="nav-brand pull-left">
               <span>
                 <div styleName="logo">
@@ -31,17 +25,19 @@ const NavBarTop = () => {
                 </div>
               </span>
             </a>
-            <a href="/" styleName="brand2" className="nav-brand pull-right">
-              <input type="text" id="Nnumber" styleName="text-line" value={numba}/>
-            </a>
           </div>
           <div styleName="listDiv" className="collapse navbar-collapse">
-            <ul styleName="list" className="nav navbar-nav">
+            <ul className="nav navbar-nav">
               <li><Link to={"/details?num=" + numba}>Details</Link></li>
               <li><Link to={"/maintenance?num=" + numba}>Maintenance</Link></li>
               <li><Link to={"/discrepancies?num=" + numba}>Discrepancies</Link></li>
               <li><Link to={"/flight?num=" + numba}>Flight</Link></li>
             </ul>
+          </div>
+          <div>
+          <a href="/" styleName="brand2" className="nav-brand">
+            <input type="text" id="Nnumber" styleName="text-line" value={numba}/>
+          </a>
           </div>
         </div>
       </div>
