@@ -31,22 +31,22 @@ const Slideshow = () => {
 				<div className="text-center">
 					<img  styleName="img-test" src={"./src/static/Slide1.jpg"}>
 					</img>
-					<button styleName="slide-button" className="btn btn-default"><a href={'https://uas.ifas.ufl.edu/' + numba}>UASRP/IFAS</a></button>
+					<button styleName="slide-button" className="btn btn-default"><a href='https://uas.ifas.ufl.edu/'>UASRP/IFAS</a></button>
 				</div>
 				<div className="text-center">
 					<img  styleName="img-test" src={"./src/static/Slide4.jpg"}>
 					</img>
-					<button styleName="slide-button" className="btn btn-default"><a href={'http://www.ehs.ufl.edu/programs/uas/' + numba}>UF UAS Safety</a></button>
+					<button styleName="slide-button" className="btn btn-default"><a href='http://www.ehs.ufl.edu/programs/uas/'>UF UAS Safety</a></button>
 				</div>
 				<div className="text-center">
 					<img  styleName="img-test" src={"./src/static/Slide3.jpg"}>
 					</img>
-					<button styleName="slide-button" className="btn btn-default"><a href={'https://uas.ifas.ufl.edu/research/' + numba}>Research</a></button>
+					<button styleName="slide-button" className="btn btn-default"><a href='https://uas.ifas.ufl.edu/research/'>Research</a></button>
 				</div>
 				<div className="text-center">
 					<img  styleName="img-test" src={"./src/static/Slide2.jpg"}>
 					</img>
-					<button styleName="slide-button" className="btn btn-default"><a href={'https://uas.ifas.ufl.edu/team/' + numba}>Team</a></button>
+					<button styleName="slide-button" className="btn btn-default"><a href='https://uas.ifas.ufl.edu/team/'>Team</a></button>
 				</div>
 			</Slider>
   )
