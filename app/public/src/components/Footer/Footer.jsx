@@ -11,7 +11,7 @@ const Footer = () => {
           <ul className="list-group">
             <li className="list-group-item" styleName="Footer1">Report</li>
             <li className="list-group-item" styleName="Footer1"><a href="https://www.faa.gov/about/office_org/field_offices/fsdo/">Incident</a></li>
-            <li className="list-group-item" styleName="Footer1"><a href='/details?num='>Lost UAV</a></li>
+            <li className="list-group-item" styleName="Footer1"><a href='https://drone-registration.net/lost-drone-form/'>Lost UAV</a></li>
           </ul>
         </div>
       </Layout>
