@@ -1,0 +1,30 @@
+.space {
+  padding-top: 100px;
+}
+
+table {
+  width: 100%;
+  border-collapse: collapse;
+  background-color: #AC9CBF;
+  margin-bottom: 100px;
+}
+
+td, th {
+  border: 1px solid purple;
+  max-width: 25%;
+}
+
+th {
+  text-align: center;
+  border-bottom: 1px;
+  font-size: 20px;
+}
+
+tr {
+  text-align: center;
+  font-size: 16px;
+}
+
+tr:nth-child(even) {
+  background-color: #D1BEE8;
+}
