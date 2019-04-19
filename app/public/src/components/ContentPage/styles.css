@@ -12,6 +12,7 @@ table {
 td, th {
   border: 1px solid purple;
   max-width: 25%;
+  padding: 5px;
 }
 
 th {
